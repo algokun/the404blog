@@ -8,12 +8,12 @@ function PageLayout({ children }) {
 
     function getTheme() {
         if (theme === "light") {
-            document.documentElement.style
+            typeof window !== "undefined" && document.documentElement.style
                 .setProperty('--bg-color', '#FFF');
             return <img src="https://img.icons8.com/ios-glyphs/24/FFFFFF/moon-symbol.png" alt="moon-icon" />
         }
         else {
-            document.documentElement.style
+            typeof window !== "undefined" && document.documentElement.style
                 .setProperty('--bg-color', '#12181B');
             return <img src="https://img.icons8.com/android/24/FFFFFF/sun.png" alt="sun-icon" />
         }

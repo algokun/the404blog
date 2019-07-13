@@ -6,6 +6,20 @@ const path = require(`path`)
 */
 
 //this will create pages programatically
+exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
+  if (stage === "build-html") {
+    actions.setWebpackConfig({
+      module: {
+        rules: [
+          {
+            test: /bad-module/,
+            use: loaders.null(),
+          },
+        ],
+      },
+    })
+  }
+}
 
 exports.createPages = ({ graphql, actions }) => {
 

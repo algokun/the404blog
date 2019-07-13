@@ -8,9 +8,7 @@ const authorLinkStyle = {
     color: "#00BCD4"
 }
 
-const cardTextColor = getComputedStyle(document.documentElement).getPropertyValue("--card-text-color")
 
-const cardLinkStyle = { color: cardTextColor, textDecoration: "none" }
 
 const Author = ({ children, to }) => (
     <AniLink style={authorLinkStyle} to={to} className="font-weight-bold" fade>
@@ -19,6 +17,10 @@ const Author = ({ children, to }) => (
 )
 
 const Card = ({ title, description, timeStamp, authorName, slug }) => {
+    const cardTextColor = getComputedStyle(document.documentElement).getPropertyValue("--card-text-color")
+
+    const cardLinkStyle = { color: cardTextColor, textDecoration: "none" }
+    
     return (
         <AniLink
             style={cardLinkStyle}

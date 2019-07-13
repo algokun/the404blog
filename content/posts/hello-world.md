@@ -3,7 +3,7 @@ slug: "/blog/my-first-post"
 date: "2019-05-04"
 title: "My first blog post"
 author: "Mohan"
-tags: ["Hello" , "MyDick"]
+tags: ["Hello"]
 description: "This is my first post on my new fake blog! How exciting!"
 authorImg: "https://avatars3.githubusercontent.com/u/21126965?s=460&v=4"
 ---

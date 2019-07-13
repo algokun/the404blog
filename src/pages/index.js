@@ -1,21 +1,25 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react'
+import Page from '../components/PageLayout'
+import Intro from '../components/Intro';
+import PostList from '../components/PostList';
+import Helmet from 'react-helmet'
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+function index() {
+  return (
+    <Page>
+      <Helmet>
+        <title>Home | The 404 Blog</title>
+      </Helmet>
+      <div className="container abs">
+        <div className="row">
+          <div className="col-lg-4">
+            <Intro />            
+          </div>
+          <PostList />
+        </div>
+      </div>
+    </Page>
+  )
+}
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
-
-export default IndexPage
+export default index

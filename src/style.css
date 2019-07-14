@@ -69,7 +69,7 @@ html body {
 }
 
 .author-img {
-    border: 2px solid var(--cyan-color) !important
+    border: 2px solid var(--cyan-color) !important;
 }
 
 .post {
@@ -84,9 +84,22 @@ html body {
     padding: 30px;
 }
 
+.post-content p {
+    margin-bottom: 2em
+}
+
 .post-content img {
     width: 100%;
     height: auto;
+}
+
+.post-content h2 {
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.post-content pre{
+    margin: 20px 0px 20px 0px
 }
 
 .about h2 {

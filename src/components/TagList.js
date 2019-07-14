@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 
 const TagList = ({ tags }) => {
     return (
-        <div>
+        <div className = "my-4">
             <h4>Tags</h4>
             <div>
                 {

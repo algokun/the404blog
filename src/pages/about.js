@@ -2,6 +2,7 @@ import React from 'react'
 import Page from '../components/PageLayout';
 import Helmet from 'react-helmet'
 import { SocialIcon } from 'react-social-icons'
+
 function About() {
     return (
         <Page>
@@ -18,11 +19,13 @@ function About() {
 
                 <div className="row my-5">
                     <div className="col-lg-6">
+
                         <img
                             width="250"
                             className="rounded-circle author-img mx-4 mb-4"
                             src="https://avatars2.githubusercontent.com/u/21126965?s=400&v=4"
                             alt="author-img" />
+
                     </div>
                     <div className="col">
                         <h3>
